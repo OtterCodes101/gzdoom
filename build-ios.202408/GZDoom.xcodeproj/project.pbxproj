@@ -19698,7 +19698,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "set -e\nif test \"$CONFIGURATION\" = \"Debug\"; then :\n  cd /Users/runner/work/gzdoom/build-ios.202408\n  make -f /Users/runner/work/gzdoom/build-ios.202408/CMakeScripts/ReRunCMake.make\nfi\nif test \"$CONFIGURATION\" = \"Release\"; then :\n  cd /Users/runner/work/gzdoom/build-ios.202408\n  make -f /Users/runner/work/gzdoom/build-ios.202408/CMakeScripts/ReRunCMake.make\nfi\nif test \"$CONFIGURATION\" = \"MinSizeRel\"; then :\n  cd /Users/runner/work/gzdoom/build-ios.202408\n  make -f /Users/runner/work/gzdoom/build-ios.202408/CMakeScripts/ReRunCMake.make\nfi\nif test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :\n  cd /Users/runner/work/gzdoom/build-ios.202408\n  make -f /Users/runner/work/gzdoom/build-ios.202408/CMakeScripts/ReRunCMake.make\nfi\n";
+			shellScript = "set -e\nif test \"$CONFIGURATION\" = \"Debug\"; then :\n  cd /Users/runner/work/gzdoom/build-ios.202408\n \nfi\nif test \"$CONFIGURATION\" = \"Release\"; then :\n  cd /Users/runner/work/gzdoom/build-ios.202408\n  \nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		B964D5133FD2674168FBB52F /* Generate game_support.pk3 */ = {
