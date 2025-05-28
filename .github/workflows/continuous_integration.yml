@@ -22,7 +22,7 @@ jobs:
       run: |
         cd build-ios.202408
         echo $(PWD)
-        xcodebuild
+        xcodebuild -allowProvisioningUpdates
         zip -r silly.zip *
         
     - name: Upload Package
