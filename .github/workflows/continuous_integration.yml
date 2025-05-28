@@ -55,7 +55,7 @@ jobs:
           -archivePath $RUNNER_TEMP/GZDoom.xcarchive \
           -scheme GenZD\ Zero \
           ${{ matrix.config.extra_options }} \
-          clean archive
+          archive
     
     - name: export ipa
       env:
