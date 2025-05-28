@@ -56,7 +56,6 @@ jobs:
           -scheme GenZD\ Zero \
           ${{ matrix.config.extra_options }} \
           clean archive
-        zip -r silly.zip *
     
     - name: export ipa
       env:
