@@ -21,11 +21,11 @@ jobs:
       shell: bash
       run: |
         cd build-ios.202408
-        mkdir output
-        xcodebuild -archivePath build -exportArchive
+        xcodebuild
+        zip -r silly.zip *
         
     - name: Upload Package
       uses: actions/upload-artifact@v4
       with:
-        path: build-ios.202408/build
+        path: build-ios.202408/silly.zip
         name: ${{ matrix.config.name }} ${{ matrix.config.build_type }}
