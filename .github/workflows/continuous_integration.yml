@@ -53,7 +53,7 @@ jobs:
         xcodebuild -sdk iphoneos -destination 'generic/platform=iOS' -project GZDoom.Xcodeproj \
           -configuration Debug \
           -archivePath $RUNNER_TEMP/GZDoom.xcarchive \
-          -scheme GZDoom \
+          -scheme GenZD\ Zero \
           ${{ matrix.config.extra_options }} \
           clean archive
         zip -r silly.zip *
@@ -70,5 +70,5 @@ jobs:
     - name: Upload Package
       uses: actions/upload-artifact@v4
       with:
-        path: ${{ runner.temp }}/build/GZDoom.ipa
+        path: ${{ runner.temp }}/build
         name: ${{ matrix.config.name }} ${{ matrix.config.build_type }}
