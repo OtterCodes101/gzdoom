@@ -53,8 +53,9 @@ jobs:
         xcodebuild -sdk iphoneos -destination 'generic/platform=iOS' -project GZDoom.Xcodeproj \
           -configuration Debug \
           -archivePath $RUNNER_TEMP/GZDoom.xcarchive \
+          -scheme GenZD\ Zero \
           ${{ matrix.config.extra_options }} \
-          archive
+          build
     
     - name: export ipa
       env:
