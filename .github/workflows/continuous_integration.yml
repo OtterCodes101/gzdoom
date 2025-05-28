@@ -13,7 +13,6 @@ jobs:
 
         - name: macOS
           os: macos-15
-          extra_options: -G Xcode -DDYN_OPENAL=OFF
           build_type: Debug
     steps:
     - name: Install the Apple certificate and provisioning profile
